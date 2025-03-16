@@ -8,20 +8,20 @@ h1 {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffc8dd;
     text-align: center;
 }
 
 
 header {
     display: inline-block;
-    background-color: #ffc8dd;
+    background-color: #c45a94;
     color: white;
     border-radius: 100px;
     padding: 30px 30px;
     text-align: center;
-    width: 1000px;
-    line-height: 1.4;
+    width: 1200px;
+    line-height: 0.6;
     
 
 }
@@ -38,3 +38,71 @@ header {
     font-size: 18px;
 }
 
+.menu {
+    background-color: #c45a94;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #575757;
+}
+
+
+
+/* Estilos para telas menores (menu oculto) */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .menu ul li a {
+        padding: 10px;
+        text-align: left;
+        border-top: 1px solid #444;
+    }
+
+    .menu ul li a:first-child {
+        border-top: none;
+    }
+
+    .menu.active ul {
+        display: block;
+    }
+
+    /* Estilos do botão para abrir/fechar o menu */
+    .menu-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 14px 20px;
+        text-align: center;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        background-color: #575757;
+    }
+}
