@@ -14,18 +14,20 @@ body {
 
 
 header {
-    display: inline-block;
+    display: block;
     background-color: #c45a94;
     color: white;
     border-radius: 100px;
     padding: 30px 30px;
     text-align: center;
-    width: 1200px;
-    line-height: 0.6;
+    width: 1500px inherit;
+    line-height: 0.2;
     
-
 }
 
+header p {
+    padding-bottom: 0px;
+}
 
 .links ul {
     list-style: none;
